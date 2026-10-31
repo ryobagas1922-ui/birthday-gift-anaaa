@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe5ef">
+<title>For Anaaa 💗</title>
+<style>
+:root{--pink:#f7a9c4;--deep:#d85f91;--pale:#fff5f8;--ink:#713d56;--gold:#f4c66a}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:linear-gradient(135deg,#fff6f8,#ffe2ed 55%,#fff8f2);overflow-x:hidden;animation:pageIn 1.1s ease both}
+@keyframes pageIn{from{opacity:0}to{opacity:1}}
+.hero-inner{animation:heroRise 1.1s cubic-bezier(.2,.8,.2,1) both}
+@keyframes heroRise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+section{animation:sectionIn .8s ease both}
+@keyframes sectionIn{from{opacity:.45;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.card{transition:transform .35s ease,box-shadow .35s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 48px #b9577c20}
+.cake{animation:cakeBounce 3s ease-in-out infinite}
+@keyframes cakeBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.gift-box{cursor:pointer;transition:transform .35s}
+.gift-box:hover{transform:scale(1.08) rotate(-5deg)}
+
+button{font:inherit;cursor:pointer;border:0}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:36px 18px;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:#ffc5d8;filter:blur(2px);opacity:.35}
+.hero:before{top:-100px;left:-80px}.hero:after{bottom:-120px;right:-70px;background:#f7d8e5}
+.hero-inner{position:relative;z-index:1;max-width:720px}
+.eyebrow{letter-spacing:.22em;text-transform:uppercase;font:12px Arial,sans-serif;color:#b65b80}
+h1{font-size:clamp(3.5rem,12vw,7rem);line-height:.95;margin:18px 0;color:#d65d8c;text-shadow:3px 5px 0 #fff}
+.subtitle{font-size:clamp(1.05rem,3vw,1.35rem);line-height:1.7;margin:20px auto;max-width:550px}
+.pill{display:inline-block;background:#fff9;border:1px solid #f5c4d5;border-radius:99px;padding:11px 18px;color:#a84e75;font:13px Arial,sans-serif}
+.btn{background:linear-gradient(135deg,#e879a5,#d65388);color:white;border-radius:999px;padding:14px 23px;box-shadow:0 8px 20px #d6538833;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.secondary{background:#fff;color:#b64f7c;border:1px solid #f1bfd1;box-shadow:none}
+section{padding:68px 18px;max-width:900px;margin:auto}
+.section-title{text-align:center;font-size:clamp(2rem,7vw,3rem);color:#cf5c8a;margin:0 0 12px}
+.lead{text-align:center;line-height:1.7;margin:0 auto 30px;max-width:600px}
+.card{background:#ffffffc9;border:1px solid #f5c9d9;border-radius:26px;padding:clamp(20px,5vw,38px);box-shadow:0 15px 45px #b9577c12}
+.cake-wrap{display:grid;place-items:center;min-height:265px}
+.cake{position:relative;width:190px;height:170px;margin:20px auto 10px}
+.tier{position:absolute;bottom:0;left:10px;width:170px;height:75px;border-radius:18px 18px 22px 22px;background:linear-gradient(#ffc2d7,#f28db2);box-shadow:inset 0 -9px #e778a0}
+.tier:before{content:"";position:absolute;top:0;left:0;width:100%;height:25px;background:#fff0f5;border-radius:50%}
+.icing{position:absolute;bottom:60px;left:10px;width:170px;height:35px;background:#fff0f5;border-radius:50%}
+.icing:after{content:"";position:absolute;left:24px;top:15px;width:15px;height:28px;background:#fff0f5;border-radius:0 0 12px 12px;box-shadow:45px 2px #fff0f5,95px -1px #fff0f5}
+.candle{position:absolute;bottom:125px;left:87px;width:16px;height:42px;border-radius:5px;background:repeating-linear-gradient(45deg,#fff 0 6px,#ed85aa 6px 12px)}
+.flame{position:absolute;top:-22px;left:2px;width:12px;height:19px;background:#ffc85c;border-radius:70% 30% 60% 40%;transform:rotate(45deg);box-shadow:0 0 18px #ffc85c;animation:flicker .8s infinite alternate}
+@keyframes flicker{to{transform:rotate(35deg) scale(.85);opacity:.75}}
+.cake-out .flame{display:none}
+.cake-note{font-size:14px;color:#a95a7b;text-align:center}
+.letter{line-height:1.95;font-size:1.06rem;white-space:pre-line}
+.letter strong{color:#d45e8d}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px}
+.photo{aspect-ratio:1/1;border-radius:18px;background:linear-gradient(135deg,#ffe2ec,#fff7fa);border:1px dashed #e8a2bd;display:grid;place-items:center;overflow:hidden;color:#b86b89;text-align:center;padding:10px;font:13px Arial,sans-serif}
+.photo img{width:100%;height:100%;object-fit:cover}
+.upload-label{display:inline-block;margin-top:16px}
+input[type=file]{display:none}
+.timer{font:clamp(2.4rem,8vw,4rem) Arial,sans-serif;letter-spacing:.08em;text-align:center;color:#d45e8d;margin:18px 0}
+.gift-box{font-size:76px;text-align:center;animation:bob 2s infinite ease-in-out}
+@keyframes bob{50%{transform:translateY(-9px)}}
+.hidden{display:none!important}
+footer{text-align:center;padding:35px 15px 55px;color:#b46a87;font-size:14px}
+.heart{position:fixed;bottom:-30px;pointer-events:none;animation:floatUp 6s linear forwards;z-index:5}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+.sparkle{position:fixed;pointer-events:none;z-index:4;animation:twinkle 2.4s ease-in-out infinite alternate}
+@keyframes twinkle{from{opacity:.25;transform:scale(.65) rotate(0)}to{opacity:1;transform:scale(1.2) rotate(35deg)}}
+.pop{animation:giftPop .75s cubic-bezier(.18,.89,.32,1.28) both}
+@keyframes giftPop{0%{transform:scale(.25) rotate(-18deg);opacity:0}70%{transform:scale(1.18) rotate(7deg);opacity:1}100%{transform:scale(1) rotate(0)}}
+
+.music-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:15px}
+.small{font:12px Arial,sans-serif;color:#a66a82;line-height:1.6}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="hero-inner">
+  <div class="eyebrow">a little celebration, made with love</div>
+  <h1>Happy<br>Birthday<br>Anaaa ♡</h1>
+  <p class="subtitle">Hari spesial untuk seseorang yang juga spesial. Semoga halaman kecil ini bisa bikin harimu lebih indah. 🤍</p>
+  <span class="pill">1 November · your special day</span>
+  <p style="margin-top:28px"><button class="btn" onclick="document.querySelector('#cake-section').scrollIntoView({behavior:'smooth'})">Mulai kejutan ✨</button></p>
+ </div>
+</header>
+
+<section id="cake-section">
+ <h2 class="section-title">Make a wish 🎂</h2>
+ <p class="lead">Sebelum membaca kejutanmu, jangan lupa buat satu harapan kecil.</p>
+ <div class="card">
+  <div class="cake-wrap">
+   <div class="cake" id="cake"><div class="candle"><span class="flame"></span></div><div class="icing"></div><div class="tier"></div></div>
+  </div>
+  <p class="cake-note" id="cake-note">Tekan tombolnya untuk meniup lilin ✨</p>
+  <div style="text-align:center;margin-top:18px"><button class="btn" onclick="blowCandle()">Tiup lilinnya 💨</button></div>
+ </div>
+</section>
+
+<section>
+ <h2 class="section-title">A little letter for you</h2>
+ <p class="lead">Ada beberapa kata yang ingin disampaikan khusus untukmu.</p>
+ <div class="card">
+  <div class="letter">Happy birthday sayangku di hari ini, aku cuman mau kamu tau kalau kehadiran kamu itu berarti buat aku. Makasii sudah jadi pribadi yang tulus, sabar dan selalu berusaha ngelakuin yang terbaik dengan cara mu sendiri sayang.
+
+Semoga di umur baru ini kamu makin tenang, makin dewasa, dan hal-hal baik pelan-pelan datang ke kamu. Semoga yang kamu harapkan bisa tercapai, dan apa yang lagi kamu perjuangkan bisa dipermudahkan.
+
+Aku harap ke depannya kita masih saling mendukung, saling jaga, dan tumbuh ke arah yang lebih baik.
+
+Selamat bertambah usia, sayang. Semoga hari ini berjalan dengan bahagia dan gembiraaaaa.
+
+<strong>Love you sayangggg 🤍🤍🤍</strong></div>
+  <p style="text-align:right;color:#d45e8d;margin-bottom:0">— with love ♡</p>
+ </div>
+</section>
+
+<section>
+ <h2 class="section-title">Our little memories 📸</h2>
+ <p class="lead">Tambahkan foto-foto favorit kalian. Foto yang dipilih akan tampil di galeri halaman ini.</p>
+ <div class="card">
+  <div class="gallery" id="gallery">
+   <div class="photo">♡<br>Foto kenangan 1</div><div class="photo">♡<br>Foto kenangan 2</div><div class="photo">♡<br>Foto kenangan 3</div>
+  </div>
+  <div style="text-align:center"><label class="btn secondary upload-label" for="photos">＋ Tambahkan foto</label><input id="photos" type="file" accept="image/*" multiple></div>
+ </div>
+</section>
+
+<section>
+ <h2 class="section-title">A song for you 🎶</h2>
+ <p class="lead">Pilih lagu dari perangkatmu untuk menemani halaman ini.</p>
+ <div class="card" style="text-align:center">
+  <p>🎧 <strong>Our birthday soundtrack</strong></p>
+  <input id="song" type="file" accept="audio/*">
+  <label class="btn secondary" for="song">Pilih musik</label>
+  <div class="music-row"><button class="btn" id="play" onclick="toggleMusic()">Putar musik ▶</button></div>
+  <audio id="audio" loop></audio>
+  <p class="small">Musik hanya diputar setelah kamu memilih file audio dari perangkat.</p>
+ </div>
+</section>
+
+<section>
+ <h2 class="section-title">A tiny countdown ⏳</h2>
+ <p class="lead">Siap untuk kejutan kecil berikutnya?</p>
+ <div class="card" style="text-align:center">
+  <div class="timer" id="timer">00:05</div>
+  <button class="btn" onclick="startCountdown()">Mulai hitung mundur</button>
+  <div id="count-message" class="hidden" style="margin-top:20px;font-size:1.2rem">Surpriseee! Semoga banyak hal baik datang menghampirimu, Anaaa! 💗✨</div>
+ </div>
+</section>
+
+<section>
+ <h2 class="section-title">One last surprise 🎁</h2>
+ <p class="lead">Ada hadiah kecil yang menunggumu di sini.</p>
+ <div class="card" style="text-align:center">
+  <div class="gift-box" id="gift">🎁</div>
+  <button class="btn" onclick="openGift()">Buka hadiahmu 💝</button>
+  <div id="gift-message" class="hidden" style="margin-top:22px;line-height:1.8">
+   <div style="font-size:42px">💐</div>
+   <strong style="font-size:1.35rem;color:#d45e8d">Untuk Anaaa</strong>
+   <p>Semoga kamu selalu punya alasan untuk tersenyum, dikelilingi orang-orang baik, dan tidak pernah kehabisan semangat untuk mengejar hal yang kamu impikan. Terima kasih sudah hadir dan menjadi bagian dari cerita yang indah. 🤍</p>
+   <div style="font-size:30px">♡ ♡ ♡</div>
+  </div>
+ </div>
+</section>
+<footer>Made with lots of love for Anaaa · Happy Birthday 🤍</footer>
+<script>
+function sparkle(){const s=document.createElement('div');s.className='sparkle';s.textContent='✦';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.color=['#e879a5','#f2bf63','#ffffff'][Math.floor(Math.random()*3)];s.style.fontSize=(10+Math.random()*16)+'px';document.body.appendChild(s);setTimeout(()=>s.remove(),2500)}
+setInterval(sparkle,650);
+function heart(){const h=document.createElement('div');h.className='heart';h.textContent=['♡','💗','✨'][Math.floor(Math.random()*3)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(15+Math.random()*20)+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),6000)}
+setInterval(heart,950);
+function blowCandle(){document.getElementById('cake').classList.add('cake-out');document.getElementById('cake').classList.add('pop');document.getElementById('cake-note').textContent='Yeay! Semoga semua harapan baikmu terwujud, Anaaa 🤍';}
+document.getElementById('photos').addEventListener('change',e=>{const g=document.getElementById('gallery');g.innerHTML='';[...e.target.files].forEach(file=>{const url=URL.createObjectURL(file);const d=document.createElement('div');d.className='photo';const img=document.createElement('img');img.src=url;img.alt='Foto kenangan';d.appendChild(img);g.appendChild(d)})});
+const audio=document.getElementById('audio');
+document.getElementById('song').addEventListener('change',e=>{if(e.target.files[0]){audio.src=URL.createObjectURL(e.target.files[0]);document.getElementById('play').textContent='Putar musik ▶'}});
+function toggleMusic(){if(!audio.src){alert('Pilih file musik terlebih dahulu ya!');return}if(audio.paused){audio.play();document.getElementById('play').textContent='Jeda musik ❚❚'}else{audio.pause();document.getElementById('play').textContent='Putar musik ▶'}}
+let countdown;
+function startCountdown(){clearInterval(countdown);let n=5;const t=document.getElementById('timer'),m=document.getElementById('count-message');m.classList.add('hidden');t.textContent='00:05';countdown=setInterval(()=>{n--;t.textContent='00:0'+n;if(n<=0){clearInterval(countdown);t.textContent='🎉';m.classList.remove('hidden');for(let i=0;i<12;i++)setTimeout(heart,i*120)}},1000)}
+function openGift(){const gift=document.getElementById('gift');gift.textContent='💐';gift.classList.remove('pop');void gift.offsetWidth;gift.classList.add('pop');document.getElementById('gift-message').classList.remove('hidden');document.getElementById('gift-message').classList.add('pop');for(let i=0;i<18;i++)setTimeout(heart,i*90)}
+</script>
+</body>
+</html>
